@@ -10,9 +10,11 @@ import {
   NcModalService,
   NcDatepickerModule,
   NcDateStructAdapter,
+  NcSelectModule,
+  NcDropdownModule
 } from '@vismaux/ngx-nordic-cool';
 @NgModule({
-  imports: [BrowserModule, FormsModule, NcModalModule, NcDatepickerModule],
+  imports: [BrowserModule, FormsModule, NcModalModule, NcDatepickerModule, NcSelectModule,NcDropdownModule],
   declarations: [AppComponent, HelloComponent,ModalComponent],
   providers: [NcModalService, NcDateStructAdapter],
   bootstrap: [AppComponent],

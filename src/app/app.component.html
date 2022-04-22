@@ -2,3 +2,26 @@
 <p>
   Start editing to see some magic happen :)
 </p>
+<nc-select [items]="items" appendTo="body" [autoPanelWidth]="true"></nc-select>
+<div ncDropdown class="dropdown">
+  <button ncDropdownToggle type="button" id="exportButtonDropdown" class="btn btn-default dropdown-toggle">
+    Angular
+  </button>
+  <ul ncDropdownMenu class="dropdown-menu" role="menu" aria-labelledby="exportButtonDropdown">
+    <li><button [ncDropdownItem]="excel" type="button" class="btn btn-secondary action-button"
+        >Excel</button></li>
+    <li><button [ncDropdownItem]="text" type="button" class="btn btn-secondary action-button"
+        >Text</button></li>
+  </ul>
+</div> 
+<!-- Single button -->
+<div class="dropdown">
+  <button type="button" id="dropdownMenuButton1" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Default </button>
+  <ul class="dropdown-menu" role="menu" aria-expanded="false" aria-hidden="true" aria-labelledby="dropdownMenuButton1">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
